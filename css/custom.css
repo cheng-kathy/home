@@ -109,7 +109,7 @@ h2.page-title {
 }
 
 h2.page-title span {
-	background-color: #FD926F;
+	background-color: #5858E6;
 	padding: 4px 0px;
 }
 
@@ -309,7 +309,7 @@ a:focus,
 a:active
  {
 	text-decoration: none;
-	color: #FD926F;
+	color: #5858E6;
 }
 
 a.clean-link {
@@ -336,7 +336,7 @@ a.clean-link:active {
 .cv:focus,
 .cv:active
  {
-	color: #FD926F;
+	color: #5858E6;
 }
 
 
@@ -355,13 +355,13 @@ a.quick-links:hover,
 a.quick-links:focus,
 a.quick-links:active {
 	text-decoration: none;
-	color: #FD926F;
+	color: #5858E6;
 }
 
 a.quick-links-current{
 	text-transform: uppercase;
 	font-weight: 600 !important;
-	color: #FD926F;
+	color: #5858E6;
 	margin-bottom: 0px;
 	line-height: 40px;
 }
@@ -380,7 +380,7 @@ a.portfolio-text-link{
 a.portfolio-text-link:hover,
 a.portfolio-text-link:focus,
 a.portfolio-text-link:active{
-	color: #FD926F;
+	color: #5858E6;
 	text-decoration: none;
 }
 
@@ -397,20 +397,20 @@ a.page-header:active {
 }
 
 a.about-link {
-	color: #FD926F;
+	color: #5858E6;
 }
 
 a.about-link:focus,
 a.about-link:hover,
 a.about-link:active {
 	text-decoration: none;
-	color: #FD926F;
+	color: #5858E6;
 }
 
 a.ref-link {
 	font-weight: 400;
 	line-height: 24px;
-	border-bottom: 1px #FD926F solid;
+	border-bottom: 1px #5858E6 solid;
 }
 
 a.ref-link:hover,
@@ -418,7 +418,7 @@ a.ref-link:focus,
 a.ref-link:active
  {
  	text-decoration: none;
-	color: #FD926F;
+	color: #5858E6;
 }
 
 /*
@@ -432,7 +432,7 @@ a.ref-link:active
 .circle{
 	border-style: solid;
 	border-width: 1pt;
-	border-color: #FD926F;
+	border-color: #5858E6;
 	border-radius: 50%;
 	width: 32px;
 	height: 32px;
@@ -440,7 +440,7 @@ a.ref-link:active
 
 .social-icons{
 	text-align: center;
-	color: #FD926F;
+	color: #5858E6;
 	position: relative;
 	top: -4px;
 	margin-right: 12px;
@@ -454,8 +454,8 @@ a.social-icons:active {
 }*/
 
 .circle:hover{
-	background-color: #FD926F;
-	border-color: #FD926F;
+	background-color: #5858E6;
+	border-color: #5858E6;
 	color: #fff;
 }
 

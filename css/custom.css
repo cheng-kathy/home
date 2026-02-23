@@ -165,10 +165,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'AvenirNext-DemiBold', sans-serif;
 }
 
-.nav-contact {
-	display: none;
-}
-
 .nav-toggle {
 	display: none;
 	background: none;
@@ -210,24 +206,6 @@ h1, h2, h3, h4, h5, h6 {
 
 	.nav-toggle {
 		display: flex;
-	}
-
-	.nav-contact {
-		display: inline-block;
-		margin-left: auto;
-		font-family: 'AvenirNext-DemiBold', sans-serif;
-		font-size: 13px;
-		color: #fff !important;
-		background: #1d1d1f;
-		padding: 6px 16px;
-		border-radius: 999px;
-		transition: background 0.2s ease;
-	}
-
-	.nav-contact:hover {
-		background: #5858E6;
-		color: #fff !important;
-		text-decoration: none;
 	}
 
 	.nav-links {

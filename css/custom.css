@@ -163,16 +163,39 @@ h1, h2, h3, h4, h5, h6 {
 .nav-link.active {
 	color: #5858E6;
 	font-family: 'AvenirNext-DemiBold', sans-serif;
+.nav-fix-top {
+	position: fixed !important;
+	width: 100%;
+	z-index: 999;
+	left: 0px !important;
 }
 
-.nav-toggle {
-	display: none;
-	background: none;
-	border: none;
-	cursor: pointer;
-	padding: 8px;
-	flex-direction: column;
-	gap: 5px;
+.navbar{
+	border: 0px;
+	margin: 0px;
+	background: white;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+div.hr {
+	background: #fff  no-repeat scroll center;
+	height: 56px;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+hr.underline {
+	margin: 0px !important;
+	border: 2px solid #7BCDD1 !important;
+	width: 180px;
+	float: left;
+	display: block;
+}
+
+div.header-shrink{
+	height: 40px;
+	margin: 12px 0px;
 }
 
 .nav-toggle-bar {
@@ -241,6 +264,18 @@ h1, h2, h3, h4, h5, h6 {
 	align-items: center;
 	margin-bottom: 0;
 	animation: fadeUp 0.6s ease both;
+div.current-page{
+	text-align: center;
+	display: inline-block;
+}
+
+div.nav-page-tabs{
+	-webkit-transition: all 0.5s ease;
+	width: 100%;
+	max-height: 40px;
+	display: inline-block;
+	transition: all 0.5s ease;
+	text-align: center;
 }
 
 .hero-photo {
@@ -443,6 +478,8 @@ h1, h2, h3, h4, h5, h6 {
 .news-section {
 	margin-top: 72px;
 	animation: fadeUp 0.6s ease 0.25s both;
+.margin-top-xl {
+	margin-top: 160px !important;
 }
 
 .news-heading {

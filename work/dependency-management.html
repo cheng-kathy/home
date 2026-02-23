@@ -22,7 +22,7 @@
 					<li><a href="../index.html" class="nav-link">Home</a></li>
 					<li><a href="../work.html" class="nav-link active">Work</a></li>
 					<li><a href="../publications.html" class="nav-link">Publications</a></li>
-					<li><a href="../resume.html" class="nav-link">Resume</a></li>
+					<li><a href="../about/ChengK_Resume.pdf" class="nav-link" target="_blank">Resume</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -31,23 +31,198 @@
 			<div class="container-narrow">
 				<a href="../work.html" class="work-detail-back">&larr; All Projects</a>
 
-				<div class="work-detail-year">2025</div>
-				<h1 class="work-detail-title">Dependency Management in Computer-Aided Design</h1>
+				<h1 class="work-detail-title">Fetch-A-Sketch Design and Evaluation</h1>
+				<p class="work-detail-subtitle">A research-driven dependency visualization tool to reduce risk in complex CAD projects</p>
 
 				<div class="work-detail-tags">
 					<span class="work-tag">Dependency Management</span>
-					<span class="work-tag">Interview Study</span>
-					<span class="work-tag">CAD</span>
+					<span class="work-tag">Prototyping</span>
+					<span class="work-tag">Usability Testing</span>
+				</div>
+
+				<div class="work-detail-image">
+					<img src="../img/fetch-a-sketch-header.png" alt="Fetch-A-Sketch system interface showing dependency heatmap and trace controls" style="width: 100%; max-width: 100%; height: auto;" />
+				</div>
+
+				<div class="work-detail-meta">
+					<div class="work-meta-item"><span class="work-meta-label">My role</span>Lead Researcher, leading a team of two engineers in prototype development</div>
+					<div class="work-meta-item"><span class="work-meta-label">Timeline</span>6 months (2025)</div>
+					<div class="work-meta-item"><span class="work-meta-label">Scope</span>100 CAD forum discussions and 10 professional CAD practitioners (generative research); 4 professional CAD practitioners (usability evaluation)</div>
+					<div class="work-meta-item"><span class="work-meta-label">Methods</span>Online forum mining, in-depth interviews, concept development, within-subjects usability evaluation, think-aloud protocol</div>
+					<div class="work-meta-item"><span class="work-meta-label">Outcome</span>Framework of 9 dependency management needs; working, web-deployable prototype: Fetch-A-Sketch </div>
+					<div class="work-meta-item"><span class="work-meta-label">Tools</span>Dovetail (analysis), Onshape API + Python/Flask (backend), Three.js (3D visualization), Netlify (deployment)</div>
 				</div>
 
 				<div class="work-detail-body">
+					<h3>Overview</h3>
 					<p>
-						Explored how CAD professionals manage complex part dependencies in large assemblies, uncovering pain points and workarounds in current tools.
+						Parametric CAD models are built on layers of interdependent features. As projects scale, these dependencies accumulate quietly, forming complex networks that are difficult to trace and even harder to reason about.
+					</p>
+					<p>
+						Designers frequently struggle to answer a critical question before making changes: <strong><em>&ldquo;What will this break?&rdquo;</em></strong>
+					</p>
+					<p>
+						While existing CAD tools support reference tracing, they do not support higher-level dependency sensemaking. Designers often rely on naming conventions, positional heuristics, or even destructive trial-and-error to understand downstream impact.
+					</p>
+					<p>
+						This project explored how to surface hidden dependency structures in a way that aligns with how designers naturally reason about geometry &mdash; reducing change risk without disrupting existing workflows.
+					</p>
+
+					<h3>Goal</h3>
+					<p>The objective was to design and validate an approach that would:</p>
+					<ul>
+						<li>Reduce change risk in complex CAD models</li>
+						<li>Improve visibility of high-impact sketch entities</li>
+						<li>Support faster, non-destructive dependency exploration</li>
+						<li>Complement existing CAD tools rather than replace them</li>
+					</ul>
+					<p>
+						The goal was not simply better tracing &mdash; but better impact prediction and decision confidence.
+					</p>
+
+					<h3>Process</h3>
+
+					<h4>Phase 1: Generative Research</h4>
+					<p>To understand systemic dependency challenges, I conducted:</p>
+					<ul>
+						<li>Qualitative content analysis of 100 CAD forum threads</li>
+						<li>In-depth interviews with 10 professional CAD practitioners</li>
+					</ul>
+					<p>To analyze this data, I used Miro for affinity mapping and axial synthesis.</p>
+					<p class="work-detail-image">
+						<img src="../img/dependency-process.png" alt="Affinity mapping and axial synthesis of dependency management findings" style="width: 90%; max-width: 90%; height: auto;" />
+					</p>
+					<p>
+						Across both datasets, recurring challenges clustered around:
+					</p>
+					<ul>
+						<li>Difficulty tracing dependency chains</li>
+						<li>Lack of project-level visibility</li>
+						<li>Risky or time-consuming change planning</li>
+					</ul>
+					<p>
+						One particular problem centered around the difficulty navigating and managing dependencies in CAD master sketches. This shaped the direction of the prototype.
+					</p>
+					<p class="work-detail-image">
+						<img src="../img/dependency-problem.png" alt="Master sketch as blueprint; dependency propagation and navigation challenge" style="width: 90%; max-width: 90%; height: auto;" />
+					</p>
+
+					<h4>Phase 2: Prototyping Fetch-A-Sketch</h4>
+					<p>
+						The generative research revealed two gaps: designers struggled to access dependency information efficiently and to interpret its impact meaningfully.
+					</p>
+					<p>
+						Rather than redesigning the CAD system, I defined the opportunity as a separate tool that could run alongside existing workflows and complement native functionality.
+					</p>
+					<p><strong>Design principles</strong></p>
+					<ul>
+						<li>Surface downstream dependencies directly on sketch geometry</li>
+						<li>Use glanceable visual signals instead of dense diagrams</li>
+						<li>Support selective exploration without overwhelming users</li>
+						<li>Preserve existing CAD workflows</li>
+					</ul>
+					<p>
+						To represent impact, I used a heatmap overlay directly on sketch geometry and operationalized risk as dependency density (absolute downstream reference count).
+					</p>
+					<p>
+						To improve traceability, I introduced targeted interactions that allow designers to filter entities, search for driving features, and inspect downstream dependencies non-destructively.
+					</p>
+					<p><strong>Iteration and Build</strong></p>
+					<p>
+						I started with a low-fidelity UI mockup to test how heatmap overlays, filtering, and search could fit naturally into a CAD sketch workflow.
+					</p>
+					<p class="work-detail-image">
+						<img src="../img/dependency-initial-mockup.png" alt="Initial design mockup of Fetch-A-Sketch interface" style="width: 90%; max-width: 90%; height: auto;" />
+					</p>
+					<p>
+						After iterating on the interaction model, we implemented a working prototype that could run alongside the CAD environment for real dependency exploration.
+					</p>
+					<p class="work-detail-image">
+						<img src="../img/dependency-final-prototype.png" alt="Final Fetch-A-Sketch prototype interface alongside CAD model" style="width: 90%; max-width: 90%; height: auto;" />
+					</p>
+					<p>
+						The resulting prototype, Fetch-A-Sketch, overlays a heatmap onto the master sketch, enabling designers to:
+					</p>
+					<ul>
+						<li>Identify high- and low-impact regions at a glance</li>
+						<li>Filter entities by dependency count</li>
+						<li>Search for features or documents and highlight driving entities</li>
+						<li>Inspect downstream dependencies non-destructively</li>
+					</ul>
+					<p>
+						The system runs alongside the CAD environment, augmenting &mdash; not replacing &mdash; native tools.
+					</p>
+
+					<h4>Phase 3: Evaluation</h4>
+					<p>
+						To assess behavioral impact, I conducted a within-subjects usability study with four experienced CAD users comparing:
+					</p>
+					<ul>
+						<li>CAD alone</li>
+						<li>CAD + Fetch-A-Sketch</li>
+					</ul>
+					<p>
+						Participants completed dependency-identification and impact-prediction tasks using Onshape in a realistic multi-document robot model.
+					</p>
+					<p>I collected and analyzed data through:</p>
+					<ul>
+						<li><strong>Think-aloud sessions</strong>, coding users&rsquo; verbalized reasoning during task completion</li>
+						<li><strong>Behavioral observation</strong>, analyzing navigation and interaction strategies</li>
+						<li><strong>Post-task interviews</strong>, synthesizing feedback on usability, perceived value, and areas for refinement</li>
+					</ul>
+					<p>
+						The objective was not only to assess usability, but to understand whether the tool changed how designers reasoned about dependency risk.
+					</p>
+
+					<h3>Key Findings</h3>
+
+					<h4>1. Designers adopted the heatmap as a primary decision aid</h4>
+					<p>
+						Participants immediately used dependency density and filtering controls to identify high-impact sketch regions, replacing position- or naming-based heuristics.
+					</p>
+
+					<h4>2. Fetch-A-Sketch reduced destructive exploration</h4>
+					<p>
+						Instead of deleting features to observe failures, participants inspected downstream dependencies directly, supporting safer and more deliberate change planning.
+					</p>
+
+					<h4>3. Geometry-aligned visualization lowered cognitive overhead</h4>
+					<p>
+						Mapping dependency density onto sketch geometry reduced the need to translate between reference lists and spatial context.
+					</p>
+
+					<h4>4. Dependency count surfaced risk &mdash; but was not sufficient</h4>
+					<p>
+						Participants emphasized the need for richer signals, such as cross-subsystem coupling and semantic grouping, highlighting clear directions for future evolution.
+					</p>
+					<p>
+						Overall, the prototype supported more structured and proactive impact assessment during model modification.
+					</p>
+
+					<h3>Impact</h3>
+					<p>This project demonstrated a viable approach to embedding dependency intelligence directly into CAD workflows. Implications include:</p>
+					<ul>
+						<li>Reduced debugging time and fewer unintended downstream breaks</li>
+						<li>Greater confidence when modifying shared master sketches</li>
+						<li>More efficient design reviews and onboarding to unfamiliar models</li>
+						<li>A foundation for richer dependency-risk modelling in future CAD systems</li>
+					</ul>
+					<p>
+						Beyond CAD, the work contributes to a broader challenge shared across complex software systems: making hidden document structures legible to practitioners.
+					</p>
+
+					<h3>Reflection</h3>
+					<p>
+						This project reinforced the importance of designing for invisible complexity. Rather than introducing heavier abstractions, I focused on surfacing lightweight, interpretable signals aligned with designers&rsquo; existing mental models.
+					</p>
+					<p>
+						It also highlighted the limits of single metrics, pointing toward richer, context-aware risk indicators. The broader lesson: in complex systems, clarity often comes from revealing hidden information (in a digestible manner) &mdash; not from adding more tooling, but from reinventing how information is presented.
 					</p>
 
 					<h3>Related Publications</h3>
 					<ul>
-						<li><a href="https://dl.acm.org/doi/10.1145/3757617" target="_blank">It's a Complete Haystack: Understanding Dependency Management Needs in Computer-Aided Design</a> — CSCW 2025</li>
+						<li><a href="https://dl.acm.org/doi/10.1145/3757617" target="_blank">It&rsquo;s a Complete Haystack: Understanding Dependency Management Needs in Computer-Aided Design</a> — CSCW 2025</li>
+						<li>Fetch-A-Sketch: coming soon</li>
 					</ul>
 				</div>
 			</div>

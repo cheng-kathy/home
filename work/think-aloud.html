@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Think-Aloud in CAD — Kathy Cheng</title>
-	<meta name="description" content="Understanding CAD Collaboration Through Think-Aloud">
+	<title>The Missing Context in CAD — Kathy Cheng</title>
+	<meta name="description" content="An experimental, think-aloud study of context-aware feedback in CAD workflows">
 	<meta name="author" content="Kathy Cheng">
 	<link href="../css/custom.css?v=3" rel="stylesheet">
 </head>
@@ -22,7 +22,7 @@
 					<li><a href="../index.html" class="nav-link">Home</a></li>
 					<li><a href="../work.html" class="nav-link active">Work</a></li>
 					<li><a href="../publications.html" class="nav-link">Publications</a></li>
-					<li><a href="../resume.html" class="nav-link">Resume</a></li>
+					<li><a href="../about/ChengK_Resume.pdf" class="nav-link" target="_blank">Resume</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -31,18 +31,163 @@
 			<div class="container-narrow">
 				<a href="../work.html" class="work-detail-back">&larr; All Projects</a>
 
-				<div class="work-detail-year">2026</div>
-				<h1 class="work-detail-title">Understanding CAD Collaboration Through Think-Aloud</h1>
+				<h1 class="work-detail-title">The Missing Context in CAD</h1>
+				<p class="work-detail-subtitle">An experimental, think-aloud study of context-aware feedback in CAD workflows</p>
 
 				<div class="work-detail-tags">
-					<span class="work-tag">Think-Aloud</span>
-					<span class="work-tag">CAD</span>
+					<span class="work-tag">Think-Aloud Study</span>
 					<span class="work-tag">Design Intent</span>
+					<span class="work-tag">Generative AI</span>
+				</div>
+
+				<div class="work-detail-image">
+					<img src="../img/think-aloud-header.png" alt="Think-aloud verbalizations improved feedback" style="width: 100%; max-width: 100%; height: auto;" />
+				</div>
+
+				<div class="work-detail-meta">
+					<div class="work-meta-item"><span class="work-meta-label">My role</span>Lead Researcher (Autodesk)</div>
+					<div class="work-meta-item"><span class="work-meta-label">Timeline</span>4 months (2025)</div>
+					<div class="work-meta-item"><span class="work-meta-label">Scope</span>20 CAD users: 10 novice designers (think-aloud modelling study); 10 expert designers (feedback review under controlled context conditions)</div>
+					<div class="work-meta-item"><span class="work-meta-label">Methods</span>Think-aloud usability testing, workflow analysis, artifact analysis, qualitative coding</div>
+					<div class="work-meta-item"><span class="work-meta-label">Outcome</span>Framework of verbal signals of design intent; criteria for AI intervention in CAD assistance</div>
+					<div class="work-meta-item"><span class="work-meta-label">Tools</span>Autodesk Fusion, Zoom, Dovetail</div>
 				</div>
 
 				<div class="work-detail-body">
+					<h3>Overview</h3>
 					<p>
-						Investigated the value of verbalizations in interpreting 3D CAD workflows, revealing how think-aloud protocols capture design intent lost in screen recordings alone.
+						As Generative AI assistance is increasingly integrated into professional tools, one critical question remains: <strong>What context does AI need to generate feedback that professionals actually find useful?</strong>
+					</p>
+					<p>
+						During my time at Autodesk, I led a multi-phase research study investigating how designers' real-time verbalizations (think-aloud data) can reveal the hidden cognitive processes behind designers' intentions in CAD, and how we can leverage these insights to improve the quality and relevance of AI feedback in CAD modelling workflows.
+					</p>
+
+					<h3>Goals</h3>
+					<p>Determine what it is about think-aloud verbalizations that are useful for interpreting a designer's CAD modelling intentions. Specifically:</p>
+					<ul>
+						<li>What information is invisible from UI traces alone?</li>
+						<li>How do experts interpret workflow intent?</li>
+						<li>What signals would an AI copilot need to generate context-aware guidance?</li>
+						<li>Does richer context actually translate into better outcomes for users?</li>
+					</ul>
+					<p>This research was designed to inform how generative AI could be integrated into professional CAD workflows — beyond surface-level automation.</p>
+
+					<h3>Process</h3>
+					<p>I designed and executed a three-phase experimental study to simulate and evaluate AI-assisted feedback.</p>
+
+					<p class="work-detail-image">
+						<img src="../img/think-aloud-methods.png" alt="Overview of the three-part think-aloud study design with designers and experts" style="width: 90%; max-width: 90%; height: auto;" />
+					</p>
+
+					<h4>Phase 1: Observing Natural Workflow Context (Think-Aloud Study)</h4>
+					<ul>
+						<li>10 novice CAD users completed modelling tasks</li>
+						<li>Participants verbalized their reasoning while modelling</li>
+						<li>We captured screen recordings + synchronized audio</li>
+					</ul>
+					<p><strong>Objective:</strong> Identify what designers naturally articulate about:</p>
+					<ul>
+						<li>Intent</li>
+						<li>Confusion</li>
+						<li>Uncertainty</li>
+						<li>Strategy</li>
+						<li>Misconceptions</li>
+					</ul>
+					<p>This phase surfaced cognitive context that is not visible from modelling actions alone.</p>
+
+					<h4>Phase 2: Expert Review as "Simulated AI"</h4>
+					<p>We recruited CAD experts to review the novice recordings under two conditions:</p>
+					<ol>
+						<li>Without audio (screen recording only)</li>
+						<li>With audio (screen + think-aloud verbalizations)</li>
+					</ol>
+					<p>Experts were instructed to provide feedback as if they were a generative AI assistant embedded in the tool.</p>
+					<p>This allowed us to isolate:</p>
+					<ul>
+						<li>What additional insight experts gain from verbal context</li>
+						<li>How feedback changes when intent is visible</li>
+						<li>What types of guidance become possible</li>
+					</ul>
+					<p>This phase effectively simulated two AI systems:</p>
+					<ul>
+						<li>One trained only on interaction traces</li>
+						<li>One augmented with <strong>intent-level signals</strong></li>
+					</ul>
+
+					<h4>Phase 3: Evaluating Feedback Quality</h4>
+					<p>The original novice designers returned to evaluate the expert-generated feedback.</p>
+					<p>For each piece of feedback, they rated:</p>
+					<ul>
+						<li>Relevance</li>
+						<li>Helpfulness</li>
+					</ul>
+					<p>This allowed us to directly measure whether additional contextual input (think-aloud data) resulted in better user-perceived feedback.</p>
+
+					<h3>Key Findings</h3>
+
+					<h4>1. UI Traces Alone Are Incomplete</h4>
+					<p>On-screen modelling actions often obscured:</p>
+					<ul>
+						<li>User intent</li>
+						<li>Misconceptions</li>
+						<li>Decision rationale</li>
+						<li>Points of uncertainty</li>
+					</ul>
+					<p>Experts reviewing without audio frequently misinterpreted the designer's goal.</p>
+					<p><strong>Implication:</strong> AI systems relying solely on interaction logs risk generating misaligned or generic feedback.</p>
+
+					<h4>2. Verbalizations Expose "Invisible" Context</h4>
+					<p>Think-aloud data surfaced:</p>
+					<ul>
+						<li>Conceptual misunderstandings</li>
+						<li>Competing strategies under consideration</li>
+						<li>Task interpretation errors</li>
+						<li>Moments of hesitation</li>
+					</ul>
+					<p>With this additional context, experts provided:</p>
+					<ul>
+						<li>More targeted guidance</li>
+						<li>Higher-level conceptual corrections</li>
+						<li>Better alignment to user intent</li>
+					</ul>
+
+					<h4>3. Context-Rich Feedback Is Rated as More Helpful</h4>
+					<p>Novice designers rated feedback generated with access to verbal context as:</p>
+					<ul>
+						<li>More relevant</li>
+						<li>More helpful</li>
+						<li>Better aligned with their actual goals</li>
+					</ul>
+					<p>This experimentally demonstrated that richer contextual signals can meaningfully improve feedback quality (see bar charts below).</p>
+
+					<h4>4. Implications for AI Copilot Design</h4>
+					<p>The research suggests that effective AI assistance in professional tools must:</p>
+					<ul>
+						<li>Infer or capture user intent, not just actions</li>
+						<li>Incorporate uncertainty signals</li>
+						<li>Distinguish between execution errors and conceptual misunderstandings</li>
+						<li>Provide workflow-aware feedback rather than reactive corrections</li>
+					</ul>
+
+					<p class="work-detail-image">
+						<img src="../img/think-aloud-feedback.png" alt="Comparison of feedback ratings with and without think-aloud context" style="width: 90%; max-width: 90%; height: auto;" />
+					</p>
+
+					<h3>Impact</h3>
+					<p>This study demonstrated that feedback quality improves when AI systems have access to <strong>intent-level signals</strong>, not just interaction traces.</p>
+					<p>Experts reviewing modelling sessions with think-aloud audio generated feedback that novice designers rated as more relevant and helpful than feedback based on screen activity alone. The results show that visible UI actions are insufficient for reliably inferring user goals, misconceptions, or uncertainty.</p>
+					<p>These findings informed Autodesk's exploration of think-aloud–informed AI assistance for CAD workflows. My work helped clarify:</p>
+					<ul>
+						<li>What kinds of user reasoning provide meaningful context for AI feedback</li>
+						<li>When assistance is likely to be helpful versus disruptive</li>
+						<li>Why intent understanding must precede intervention</li>
+					</ul>
+					<p>By grounding these discussions in controlled experimental evidence, this project supported more context-aware AI assistance in professional design tools.</p>
+					<p><a href="https://aecmag.com/ai/autodesk-unleashes-neural-cad/" target="_blank">Learn more about Autodesk's Think-Aloud initiative</a></p>
+
+					<h3>Reflection</h3>
+					<p>
+						Conducting this research at Autodesk clarified what impactful industry research looks like. The findings directly informed conversations about how AI should integrate into professional design workflows. Seeing experimental evidence shape product thinking reinforced my focus on producing work that is both rigorous and actionable — translating how people reason into guidance teams can build on.
 					</p>
 
 					<h3>Related Publications</h3>

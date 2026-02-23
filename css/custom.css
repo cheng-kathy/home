@@ -371,6 +371,13 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 }
 
+.page-intro {
+	margin-top: 4px;
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #6e6e73;
+}
+
 .pub-item {
 	padding: 24px 0;
 	border-bottom: 1px solid #f0f0f0;
@@ -395,11 +402,18 @@ h1, h2, h3, h4, h5, h6 {
 	border-bottom: none;
 }
 
+.pub-venue {
+	font-family: 'AvenirNext-Regular', sans-serif;
+	font-size: 13px;
+	color: #5858E6;
+	margin-bottom: 6px;
+}
+
 .pub-title {
 	font-family: 'AvenirNext-DemiBold', sans-serif;
-	font-size: 16px;
+	font-size: 17px;
 	line-height: 1.4;
-	margin-bottom: 4px;
+	margin-bottom: 6px;
 }
 
 .pub-title a {
@@ -415,7 +429,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-size: 14px;
 	color: #6e6e73;
 	line-height: 1.5;
-	margin-bottom: 4px;
+	margin-bottom: 6px;
 }
 
 .pub-authors .self {
@@ -423,19 +437,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: italic;
 }
 
-.pub-venue {
-	font-family: 'AvenirNext-Medium', sans-serif;
-	font-size: 13px;
-	color: #86868b;
+.pub-links {
+	font-size: 14px;
 }
 
-.pub-venue a {
+.pub-links a {
+	color: #1d1d1f;
+	text-decoration: underline;
+	margin-right: 12px;
+	transition: color 0.2s ease;
+}
+
+.pub-links a:hover {
 	color: #5858E6;
-	font-size: 13px;
-}
-
-.pub-venue a:hover {
-	color: #3d3de0;
 }
 
 /* ======== News Stack ======== */
@@ -571,10 +585,40 @@ h1, h2, h3, h4, h5, h6 {
 
 .work-card-img {
 	width: 180px;
-	min-height: 100%;
-	background: #e8e8ed;
+	height: 180px;
 	flex-shrink: 0;
-	object-fit: cover;
+	background: #e8e8ed;
+	align-self: center;
+	margin-left: 10px;
+}
+
+.work-card-img-wrap {
+	width: 180px;
+	height: 180px;
+	flex-shrink: 0;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	align-self: center;
+	margin-left: 10px;
+}
+
+.work-card-img-wrap img {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	object-fit: contain;
+	display: block;
+}
+
+img.work-card-img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;
+	display: block;
 }
 
 .work-card-body {
@@ -626,8 +670,33 @@ h1, h2, h3, h4, h5, h6 {
 
 	.work-card-img {
 		width: 100%;
-		height: 140px;
-		min-height: auto;
+		height: auto;
+		aspect-ratio: 1;
+		background: #e8e8ed;
+	}
+
+	.work-card-img-wrap {
+		width: 100%;
+		height: auto;
+		aspect-ratio: 1;
+	}
+
+	.work-card-img-wrap img {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+
+	.work-card-img-wrap {
+		position: relative;
+	}
+
+	img.work-card-img {
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
 	}
 }
 

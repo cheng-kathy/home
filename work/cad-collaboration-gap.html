@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Closing the CAD Collaboration Gap — Kathy Cheng</title>
+	<meta name="description" content="An in-depth interview study of distributed product teams using CAD">
+	<meta name="author" content="Kathy Cheng">
+	<link href="../css/custom.css?v=3" rel="stylesheet">
+</head>
+<body>
+	<div class="page-wrapper">
+		<nav class="site-nav">
+			<div class="nav-inner">
+				<button class="nav-toggle" aria-label="Toggle navigation">
+					<span class="nav-toggle-bar"></span>
+					<span class="nav-toggle-bar"></span>
+					<span class="nav-toggle-bar"></span>
+				</button>
+				<ul class="nav-links">
+					<li><a href="../index.html" class="nav-link">Home</a></li>
+					<li><a href="../work.html" class="nav-link active">Work</a></li>
+					<li><a href="../publications.html" class="nav-link">Publications</a></li>
+					<li><a href="../resume.html" class="nav-link">Resume</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main class="page-content">
+			<div class="container-narrow">
+				<a href="../work.html" class="work-detail-back">&larr; All Projects</a>
+
+				<h1 class="work-detail-title">Closing the CAD Collaboration Gap</h1>
+				<p class="work-detail-subtitle">An In-Depth Interview Study of Distributed Product Teams</p>
+
+				<div class="work-detail-tags">
+					<span class="work-tag">Interviews</span>
+					<span class="work-tag">CAD</span>
+					<span class="work-tag">Collaboration</span>
+				</div>
+
+				<div class="work-detail-meta">
+					<div class="work-meta-item"><span class="work-meta-label">My role</span>Lead Researcher</div>
+					<div class="work-meta-item"><span class="work-meta-label">Timeline</span>4 months (2022)</div>
+					<div class="work-meta-item"><span class="work-meta-label">Scope</span>20 professional CAD practitioners across 5 industries</div>
+					<div class="work-meta-item"><span class="work-meta-label">Methods</span>In-depth interviews, workflow walkthroughs, multi-round inductive coding</div>
+					<div class="work-meta-item"><span class="work-meta-label">Outcome</span>Framework of 14 collaboration challenges</div>
+					<div class="work-meta-item"><span class="work-meta-label">Tools</span>Zoom, NVivo, Miro</div>
+				</div>
+
+				<div class="work-detail-body">
+					<h3>Overview</h3>
+					<p>
+						As hardware development becomes increasingly distributed and cross-functional, collaboration has grown more complex — yet the core tool used to build products, computer-aided design (CAD), has not evolved at the same pace.
+					</p>
+					<p>
+						While vendors were investing in cloud and synchronous CAD, there was no systematic understanding of:
+					</p>
+					<ul>
+						<li>Where distributed workflows actually break down</li>
+						<li>Which collaboration issues are tooling vs process problems</li>
+						<li>Why adoption of collaborative CAD remained slow</li>
+					</ul>
+					<p>
+						I led an in-depth interview study to investigate collaboration breakdowns in professional CAD workflows and identify where meaningful intervention is needed.
+					</p>
+
+					<h3>Goal</h3>
+					<p>Move beyond anecdotal complaints about CAD collaboration and systematically answer:</p>
+					<ol>
+						<li>What collaboration challenges do professionals face in distributed CAD workflows?</li>
+						<li>Where do current tools fall short?</li>
+						<li>What workarounds have professionals developed in response to these challenges?</li>
+					</ol>
+					<p>The broader aim was to inform future CAD tooling and collaboration infrastructure.</p>
+
+					<h3>Process</h3>
+					<h4>Research Design</h4>
+					<p>I conducted 20 semi-structured interviews with professional CAD practitioners:</p>
+					<ul>
+						<li>Interns to senior engineers to CEOs</li>
+						<li>Aerospace, automotive, electronics industries</li>
+						<li>Teams using both manual file management and enterprise PLM systems</li>
+					</ul>
+					<p>
+						Rather than asking directly about "pain points," I asked participants to walk through a recent real project from start to finish. Participants were prompted to describe frustrating, time-consuming, or risky collaboration moments.
+					</p>
+					<p>This surfaced coordination failures organically within real workflows.</p>
+
+					<h4>Analysis Strategy</h4>
+					<p>We conducted three rounds of analysis:</p>
+					<ol>
+						<li>Open coding to identify breakdowns in specific workflow activities</li>
+						<li>Challenge identification to isolate root causes</li>
+						<li>Axial synthesis to group related challenges into higher-level systemic themes</li>
+					</ol>
+					<p>This process resulted in <strong>14 collaboration challenges</strong> grouped into four structural domains:</p>
+					<ul>
+						<li>Collaborative design</li>
+						<li>Synchronous communication</li>
+						<li>Data management</li>
+						<li>Permissioning</li>
+					</ul>
+					<p>Rather than listing isolated usability issues, the outcome was a structured taxonomy of collaboration breakdowns.</p>
+
+					<h3>Key Findings</h3>
+					<p>The study surfaced recurring systemic patterns across industries and company sizes.</p>
+
+					<h4>1. Collaboration Runs on Workarounds</h4>
+					<p>Teams rely heavily on:</p>
+					<ul>
+						<li>Slack/email screenshots (redlining outside the system)</li>
+						<li>Manual Excel change logs</li>
+						<li>File duplication for branching</li>
+						<li>Assembly configurations as informal sandboxes</li>
+					</ul>
+					<p>These workarounds reduce traceability and accumulate technical debt.</p>
+
+					<h4>2. Dependency Awareness Is Reactive</h4>
+					<p>Designers often:</p>
+					<ul>
+						<li>Reuse legacy models without understanding linked artifacts</li>
+						<li>Modify models without visibility into downstream impact</li>
+						<li>Manually refresh files to avoid overwriting teammates</li>
+					</ul>
+					<p>Dependency management is largely manual and error-prone.</p>
+
+					<h4>3. Version Control Lacks Change Intelligence</h4>
+					<p>PLM systems automate storage but do not:</p>
+					<ul>
+						<li>Summarize semantic differences between versions</li>
+						<li>Surface change impact before release</li>
+						<li>Highlight cross-document ripple effects</li>
+					</ul>
+					<p>Designers must manually reconstruct what changed.</p>
+
+					<h4>4. CAD Is Used for Communication — But Isn't Designed for It</h4>
+					<p>During design reviews:</p>
+					<ul>
+						<li>Navigating live models is slow and fragile</li>
+						<li>Stakeholders without CAD access rely on screenshots</li>
+						<li>Model orientation and feature visibility require manual manipulation</li>
+					</ul>
+					<p>CAD functions as a communication tool without communication affordances.</p>
+
+					<h3>Impact</h3>
+					<p>This project had three major outcomes:</p>
+
+					<h4>1. Reframed the Problem Space</h4>
+					<p>Shifted the conversation from isolated usability issues to structural coordination failures — particularly dependency visibility and traceability.</p>
+
+					<h4>2. Informed Subsequent Tool Development</h4>
+					<p>The dependency-awareness findings directly motivated later prototype development focused on visualizing and managing model dependencies.</p>
+
+					<h4>3. Established a Strategic Roadmap</h4>
+					<p>Clarified which collaboration challenges require:</p>
+					<ul>
+						<li>Tooling improvements</li>
+						<li>Organizational standards</li>
+						<li>Management processes</li>
+					</ul>
+					<p>This provided a framework for prioritizing infrastructure investments rather than incremental feature tweaks.</p>
+
+					<h3>Reflection</h3>
+					<p>
+						This study shifted my lens from "feature gaps" to "coordination visibility." I now look for the social workarounds teams build around tools — because those often reveal the real design opportunity. If teams are going through the trouble of developing temporary solutions, it must signal a persistent pain point. Improving complex systems is rarely about adding capability; it's about reducing hidden friction.
+					</p>
+
+					<h3>Publication</h3>
+					<ul>
+						<li><a href="https://dl.acm.org/doi/abs/10.1145/3579613" target="_blank">In the Age of Collaboration, the Computer-Aided Design Ecosystem is Behind: An Interview Study of Distributed CAD Practice</a> — CSCW 2023</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<footer class="site-footer">
+			<div class="footer-inner">
+				<a href="mailto:kathy.cheng@mail.utoronto.ca" class="footer-link"><svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>Email</a>
+				<a href="https://scholar.google.com/citations?user=cwrLbXkAAAAJ&hl=en" class="footer-link" target="_blank"><svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>Google Scholar</a>
+				<a href="https://www.linkedin.com/in/kathy-cheng/" class="footer-link" target="_blank"><svg class="footer-icon" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		document.querySelector('.nav-toggle').addEventListener('click', function() {
+			document.querySelector('.nav-links').classList.toggle('open');
+		});
+	</script>
+</body>
+</html>
